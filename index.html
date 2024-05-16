@@ -36,12 +36,14 @@
   <script src="flutter.js" defer></script>
 </head>
 <body>
+  <script src="flutter_bootstrap.js" async></script>
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
       FlutterLoader.load({
+        entrypointUrl: "main.dart.js?v=" + "2308553336",
         serviceWorker: {
-          serviceWorkerVersion: "486158907",
+          serviceWorkerVersion: "2308553336",
         },
         onEntrypointLoaded: function(engineInitializer) {
           engineInitializer.initializeEngine().then(function(appRunner) {
